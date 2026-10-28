@@ -1,0 +1,38 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js Build Output
+/.next/
+/out/
+/build
+
+# Database
+prisma/school.db
+prisma/school.db-journal
+
+# Environment Secrets
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Operating System & IDE Files
+.DS_Store
+*.pem
+Thumbs.db
+.vscode/
+.idea/
+
+# Vercel Deployment Artifacts
+.vercel
+
+# TypeScript Output
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
