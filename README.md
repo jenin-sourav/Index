@@ -5,6 +5,7 @@
 [![Production Build](https://img.shields.io/badge/next.js%20build-passing-brightgreen)]()
 [![Database](https://img.shields.io/badge/database-Prisma%20%7C%20SQLite%20%26%20Postgres-blue)]()
 [![Security](https://img.shields.io/badge/security-HMAC--SHA256%20%7C%20Bcrypt-gold)]()
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjenin-sourav%2FIndex&env=SESSION_SECRET,NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_SCHOOL_NAME,NEXT_PUBLIC_TIMEZONE,NEXT_PUBLIC_CURRENCY)
 
 A complete, production-oriented International School Website and unified School Management System (SMS) built with Next.js 14, TypeScript, Tailwind CSS, and Prisma ORM, tailored for the Bangladesh market with international academic and engineering standards.
 
