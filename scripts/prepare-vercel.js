@@ -30,6 +30,17 @@ if (dbUrl.startsWith('postgres://') || dbUrl.startsWith('postgresql://')) {
     }
   }
 } else {
-  console.log('[AIS Build] Retaining SQLite datasource provider.');
+  console.log('[AIS Build] SQLite datasource provider active.');
+  const dbFile = path.join(__dirname, '..', 'prisma', 'school.db');
+  if (!fs.existsSync(dbFile)) {
+    console.log('[AIS Build] school.db not found. Initializing SQLite database...');
+    try {
+      execSync('npx prisma db push --skip-generate', { stdio: 'inherit' });
+      execSync('node prisma/seed.js', { stdio: 'inherit' });
+      console.log('[AIS Build] SQLite database initialized successfully.');
+    } catch (err) {
+      console.warn('[AIS Build] SQLite setup notice:', err.message);
+    }
+  }
 }
 

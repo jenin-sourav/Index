@@ -11,8 +11,8 @@
 /out/
 /build
 
-# Database
-prisma/school.db
+# Database (keep demo seed db committed for zero-friction Vercel builds)
+# prisma/school.db
 prisma/school.db-journal
 
 # Environment Secrets
